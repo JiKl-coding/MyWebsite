@@ -1,8 +1,9 @@
 :root{
   --main-blue-color: #27374D;
   --main-white-color: #F9FCFF;
-  --square-border-color: #61677A;
+  --square-border-color: #5b6588;
   --title-background-color: #4D2F41; 
+  --hover-blue-color: #457275;
   --main-font: 'Open Sans', sans-serif;
   --logo-font: 'Qwitcher Grypen', cursive;
   --highlight-font: 'Marcellus', serif;
@@ -170,35 +171,69 @@ a{
   height: 100vh;
 }
 
-.title{
+.title, .latest-work, .info{
   display: flex;
-  height: 40vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-image: url(../assets/img/title-background.png);
-  background-size: auto 40vh;
-background-repeat: no-repeat;
-  font-family: var(--logo-font);
-  font-size: 9vh;
-  text-align: center;
-  color:var(--main-white-color);
+  justify-content: start;
+  height: 40vh;
+  }
+
+.title{
+  margin-top: 5vh;
 }
 
-
-.title > h1{
-  font-size: 10vh;
+.title h1{
   font-family: var(--logo-font);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  
+  font-size: 11rem;
   font-weight: 400;
+  color:black;
+  transition: color 1s ease-in-out;
 }
 
-.subtitle > h2{
+.title h1:hover{
+  color:var(--hover-blue-color);
+}
+
+.title > h2{
   font-family: var(--highlight-font);
   font-size: 2.25rem;
   font-weight: 400;
   color:var(--main-blue-color);
+}
+
+.latest-work{
+  height: fit-content;
+}
+
+.latest-work h2{
+  font-family: var(--highlight-font);
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--main-white-color);
+  background-color: var(--main-blue-color);
+  border: var(--main-blue-color) solid 1px;
+  border-radius: 100px;
+  padding: 0vh 5vh;
+}
+
+.latest-work a{
+  color: var(--main-blue-color);
+  font-size: 4rem;
+  transition: color 0.75s ease-in-out, padding 0.75s;
+}
+
+.latest-work a:hover{
+  color:var(--hover-blue-color);
+  padding-top: 2vh;
+}
+
+.info{
+  height: 23vh;
+}
+
+.info > p{
+  font-family: var(--main-font);
+  font-style: italic;
+  font-size: 2.25vh;
 }
