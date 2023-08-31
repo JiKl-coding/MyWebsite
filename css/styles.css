@@ -16,6 +16,10 @@
   box-sizing: border-box;
   }
 
+html{
+  scroll-behavior: smooth;
+}
+
 a{
   text-decoration: none;
   color: var(--main-white-color)
@@ -255,16 +259,112 @@ a{
 .example-square > div{
   width: 30vh;
   height: 10vh;
+  cursor: pointer;
 }
 
-.work-examples-container .example:nth-child(1){
+.example:nth-child(1){
   margin-top: 10vh;
 }
 
-.work-examples-container .example:nth-child(2){
+.example:nth-child(2){
   margin-top: 30vh;
 }
 
-.work-examples-container .example:nth-child(3){
+.example:nth-child(3){
   margin-top: 0vh;
+}
+
+.example:nth-child(1) > a:nth-child(2){
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  font-size: 4vh;
+  font-family: 'Sacramento', cursive;
+  font-style: italic;
+  font-weight: 100;
+  color: #ebb8cb;
+  transition: transform 0.4s ease;
+}
+
+.example:nth-child(1) > a > span{
+  color: black;
+}
+
+.example > a:hover{
+  transform: scale(1.05)
+}
+
+.example-square > div{
+  display: flex;
+  justify-content: center;
+}
+
+.example-square > div > img{
+  width: 24vh;
+}
+
+.example-square > .first-part{
+  align-items: end;
+}
+
+.example-square > .second-part{
+  transition: padding 1s ease;
+}
+
+.example-square > .third-part{
+  align-items: start;
+}
+
+.example-square .second-part > img{
+  opacity: 1s;
+  transition: opacity 1s ease;
+  animation: fadeIn 3s ease forwards;
+}
+
+.example-square .second-part > p{
+  display: none;
+  text-align: center;
+  font-family: var(--main-font);
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+.example-square:hover .second-part{
+  padding: 10vh 2vh;
+}
+
+.example-square:hover .second-part > p{
+  display: block;
+  position: absolute;
+  width: 24vh;
+  opacity: 1;
+  animation: fadeIn 3s ease forwards;
+}
+
+.example-square:hover .second-part > img{
+  display:none;
+  animation: displayOff 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+    display: block;
+  }
+}
+
+@keyframes displayOff {
+  0% {
+    display: inline;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
 }
