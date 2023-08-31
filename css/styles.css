@@ -237,3 +237,34 @@ a{
   font-style: italic;
   font-size: 2.25vh;
 }
+
+.work-examples-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.example-square{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.example-square > div{
+  width: 30vh;
+  height: 10vh;
+}
+
+.work-examples-container .example:nth-child(1){
+  margin-top: 10vh;
+}
+
+.work-examples-container .example:nth-child(2){
+  margin-top: 30vh;
+}
+
+.work-examples-container .example:nth-child(3){
+  margin-top: 0vh;
+}
