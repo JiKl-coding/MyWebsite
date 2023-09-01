@@ -243,7 +243,7 @@ a{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  padding-top: 10vh;
+  padding: 10vh 0vh;
 }
 
 .example-square{
@@ -285,6 +285,36 @@ a{
 
 .example:nth-child(1) > a > span{
   color: black;
+}
+
+.example > a:hover{
+  transform: scale(1.05)
+}
+
+.example:nth-child(2) > a:nth-child(2){
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  font-size: 3.5vh;
+  font-family: var(--main-font);
+  font-weight: 100;
+  color: rgb(230, 86, 86);
+  transition: transform 0.4s ease;
+}
+
+.example > a:hover{
+  transform: scale(1.05)
+}
+
+.example:nth-child(3) > a:nth-child(2){
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  font-size: 4vh;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 600;
+  color: black;
+  transition: transform 0.4s ease;
 }
 
 .example > a:hover{
@@ -347,6 +377,7 @@ a{
   text-align: center;
   padding-bottom: 0.2rem;
   color: var(--square-border-color);
+  font-size: 0.8rem;
 }
 
 @keyframes fadeIn {
