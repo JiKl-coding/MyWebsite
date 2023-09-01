@@ -256,13 +256,15 @@ a{
 }
 
 .info{
-  height: 23vh;
+  min-height: 23vh;
+  height: fit-content;
 }
 
 .info > p{
   font-family: var(--main-font);
   font-style: italic;
   font-size: 1.15rem;
+  width: 85%;
 }
 
 .work-examples-container{
@@ -459,7 +461,7 @@ a{
 
 
 
-@media (max-width:1200px){
+@media (max-width:1300px){
 
   .main-container{
     grid-template-columns: 1fr;
@@ -549,7 +551,7 @@ a{
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navbar{
     display: none;
   }
