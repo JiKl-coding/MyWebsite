@@ -176,7 +176,7 @@ a{
   height: 100vh;
 }
 
-.title, .latest-work, .info{
+.title, .latest-work, .info, .lang{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,8 +184,34 @@ a{
   height: 40vh;
   }
 
-.title{
-  margin-top: 5vh;
+.lang{
+  height: 3vh;
+  align-items: center;
+  justify-content: end;
+  padding: 1.5rem 2rem;
+  flex-direction: row;
+  gap: 0.5rem
+}
+
+.lang > button{
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+  color: black;
+  transition: transform 0.4s ease;
+}
+
+.lang a{
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.lang > button:hover{
+  transform: scale(1.15);
 }
 
 .title h1{
@@ -444,6 +470,17 @@ a{
     height: 20vh;
   }
 
+  .lang{
+    background-color: transparent;
+    position: fixed;
+    right: 0;
+    background-color: var(--);
+  }
+
+  .lang a{
+    font-weight: 600;
+  }
+
   .navbar{
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr 4fr 2fr;
@@ -510,4 +547,10 @@ a{
     display: none;
   }
 
+}
+
+@media (max-width: 800px) {
+  .navbar{
+    display: none;
+  }
 }
