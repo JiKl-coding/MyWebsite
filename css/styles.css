@@ -22,6 +22,10 @@ html{
   scroll-behavior: smooth;
 }
 
+body{
+  width: 100vw;
+}
+
 a{
   text-decoration: none;
   color: var(--main-white-color)
@@ -51,7 +55,7 @@ a{
 }
 
 #main-logo-image{
-  width: 50%;
+  width: 130px;
 }
 
 #stacks{
@@ -174,6 +178,10 @@ a{
   font-weight: 600;
 }
 
+#hamburger{
+  display: none;
+}
+
 .main{
   min-width: 1000px;
 }
@@ -183,7 +191,7 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  min-height: 40vh;
+  min-height: 25rem;
   }
 
 .lang{
@@ -254,7 +262,7 @@ a{
 }
 
 .info{
-  min-height: 23vh;
+  min-height: 15rem;
   height: fit-content;
 }
 
@@ -271,7 +279,7 @@ a{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  margin: 15vh 0vh;
+  margin: 10rem 0rem;
 }
 
 .example-square{
@@ -488,16 +496,16 @@ a{
 @media (max-width: 1024px) {
 
 .main-container{
-    grid-template-columns: 100%;
-    grid-template-rows: 100px auto;
-  }
+  grid-template-columns: 100%;
+  grid-template-rows: 100px auto;
+}
 
 .navbar{
-    min-width: 100%;
-    grid-template-columns: 1fr 2fr 4fr 2fr;
-    grid-template-rows: 100%;
-    height: 100px;
-  }
+  min-width: 100%;
+  grid-template-columns: 1fr 2fr 4fr 2fr;
+  grid-template-rows: 100%;
+  height: 100px;
+}
 
 .stack-h{
   display: none;
@@ -508,7 +516,7 @@ a{
 }
 
 #main-logo-image{
-  width: 70%;
+  width: 80px;
 }
 
 .stack-square > div{
@@ -522,7 +530,7 @@ a{
 }
 
 .menu > li, .menu > a{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .socials{
@@ -530,8 +538,34 @@ a{
   height: 70px;
 }
 
+.example-square > div{
+  width: 15rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.example:nth-child(1) > a:nth-child(2){
+  font-size: 2rem;
+}
+
+.example:nth-child(2) > a:nth-child(2){
+  font-size: 1.75rem;
+}
+
+.example:nth-child(3) > a:nth-child(2){
+  font-size: 2rem;
+}
+
+.example-square > div > img{
+  width: 12rem;
+}
+
+.example-square .second-part > p{
+  width: 12rem;
+}
+
 .main{
-  width: 100vw;
+  min-width: 600px;
 }
 
 .footer{
@@ -547,11 +581,152 @@ a{
   padding: 1rem 0rem;
   background-color: var(--main-blue-color);
 }
+}
+
+@media (max-width: 850px) {
+
+  .navbar > :nth-child(3){
+    display: none;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #main-logo-image{
+    width: 100px;
+    padding-left: 1rem;
+  }
+
+  #hamburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    padding-top: 3rem;
+    width: 5rem;
+    color: white;
+    height: 100px;
+    transform: rotate(90deg);
+  }
+
+  .title, .info{
+    min-height: 12.5rem;
+    }
+
+  .title h1{
+    font-size: 10rem;
+  }
+    
+  .title > h2{
+    font-size: 2.25rem;
+  }
+
+  .info > p{
+    max-width: 55ch;
+    font-size: 1.3rem;
+  }
+
+  .latest-work h2{
+    font-size: 3.5rem;
+  }
+  
+  .work-examples-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 10rem 0rem;
+  }
+
+  .example{
+    margin-bottom: 10rem;
+  }
+
+  .example:nth-child(1){
+    margin-top: 0;
+  }
+  
+  .example:nth-child(2){
+    margin-top: 0;
+  }
+  
+}
+
+@media (max-width: 750px){
+  .title h1{
+    font-size: 8rem;
+  }
+    
+  .title > h2{
+    font-size: 2rem;
+  }
+
+  .info > p{
+    max-width: 50ch;
+    font-size: 1.1rem;
+  }
+  
+  .latest-work h2{
+    font-size: 3rem;
+  }
+
+  .stack-square > div{
+    width: 66px;
+    height: 22px;
+  }
+
+  .socials{
+    width: 60px;
+    height: 60px;
+  }
+
+  #main-logo-image{
+    width: 80px;
+  }
 
 }
 
-@media (max-width: 480px) {
-  .menu{
-    pass;
+@media (max-width: 635px){
+
+  .navbar{
+    height: 75px;
   }
+
+  .main{
+    min-width: 100px;
+  }
+
+  .title h1{
+    font-size: 6rem;
+  }
+    
+  .title > h2{
+    font-size: 1.5rem;
+  }
+
+  .info > p{
+    max-width: 45ch;
+    font-size: 1rem;
+  }
+  
+  .latest-work h2{
+    font-size: 2.5rem;
+  }
+  .main{
+    min-width: 600px;
+}
+
+#main-logo-image{
+  width: 70px;
+}
+
+.navbar > :nth-child(2), .stack-squares, #stacks, #socials-container{
+  display: none;
+}
+
+#hamburger{
+  height: 75px;
+}
 }
