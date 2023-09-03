@@ -9,7 +9,6 @@
   --main-font: 'Open Sans', sans-serif;
   --logo-font: 'Qwitcher Grypen', cursive;
   --highlight-font: 'Marcellus', serif;
-  font-size: 62,5%;
 }
 
 *{
@@ -39,7 +38,7 @@ a{
 .navbar{
     display: grid;
     position: fixed;
-    max-width: 275px;
+    width: 275px;
     grid-template-rows: 2fr 2fr 4fr 2fr auto;
     position: fixed;
     height: 100%;
@@ -599,6 +598,10 @@ a{
     padding-left: 1rem;
   }
 
+  .navbar > :nth-child(2), .stack-squares, #stacks, #socials-container{
+    display: none;
+  }
+
   #hamburger{
     display: flex;
     justify-content: center;
@@ -688,14 +691,21 @@ a{
 
 }
 
-@media (max-width: 635px){
+@media (max-width: 650px){
 
   .navbar{
     height: 75px;
   }
 
-  .main{
-    min-width: 100px;
+  #main-logo-image{
+    width: 70px;
+  }
+  
+  #hamburger{
+    height: 75px;
+    font-size: 3rem;
+    padding-top: 2rem;
+    width: 4rem;
   }
 
   .title h1{
@@ -715,18 +725,31 @@ a{
     font-size: 2.5rem;
   }
   .main{
-    min-width: 600px;
+    min-width: 0px;
 }
 
-#main-logo-image{
-  width: 70px;
 }
 
-.navbar > :nth-child(2), .stack-squares, #stacks, #socials-container{
-  display: none;
+@media (max-width: 480px){
+  :root{
+    font-size: 90%;
+  }
 }
 
-#hamburger{
-  height: 75px;
+@media (max-width: 420px){
+  :root{
+    font-size: 75%;
+  }
 }
+
+@media (max-width: 320px){
+  :root{
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 260px){
+  :root{
+    font-size: 50%;
+  }
 }
