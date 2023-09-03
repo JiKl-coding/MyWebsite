@@ -282,28 +282,24 @@ a{
 }
 
 .example-square > div{
-  width: 30vh;
-  height: 10vh;
+  width: 18rem;
+  height: 6rem;
   cursor: pointer;
 }
 
 .example:nth-child(1){
-  margin-top: 10vh;
+  margin-top: 6rem;
 }
 
 .example:nth-child(2){
-  margin-top: 30vh;
-}
-
-.example:nth-child(3){
-  margin-top: 0vh;
+  margin-top: 18rem;
 }
 
 .example:nth-child(1) > a:nth-child(2){
   display: flex;
   justify-content: center;
-  margin-top: 1vh;
-  font-size: 4vh;
+  margin-top: 0.8rem;
+  font-size: 2.5rem;
   font-family: 'Sacramento', cursive;
   font-style: italic;
   font-weight: 100;
@@ -322,8 +318,8 @@ a{
 .example:nth-child(2) > a:nth-child(2){
   display: flex;
   justify-content: center;
-  margin-top: 1vh;
-  font-size: 3.5vh;
+  margin-top: 0.8rem;
+  font-size: 2.25rem;
   font-family: var(--main-font);
   font-weight: 100;
   color: rgb(230, 86, 86);
@@ -337,8 +333,8 @@ a{
 .example:nth-child(3) > a:nth-child(2){
   display: flex;
   justify-content: center;
-  margin-top: 1vh;
-  font-size: 4vh;
+  margin-top: 0.8rem;
+  font-size: 2.5rem;
   font-family: 'Amatic SC', cursive;
   font-weight: 600;
   color: black;
@@ -355,7 +351,7 @@ a{
 }
 
 .example-square > div > img{
-  width: 24vh;
+  width: 14.4rem;
 }
 
 .example-square > .first-part{
@@ -382,16 +378,17 @@ a{
   font-family: var(--main-font);
   transition: opacity 1s ease;
   opacity: 0;
+  width: 14.4rem;
+  font-size: 1.25rem;
 }
 
 .example-square:hover .second-part{
-  padding: 10vh 2vh;
+  padding: 6rem 1.25rem;
 }
 
 .example-square:hover .second-part > p{
   display: block;
   position: absolute;
-  width: 24vh;
   opacity: 1;
   animation: fadeIn 3s ease forwards;
 }
@@ -403,9 +400,9 @@ a{
 
 .footer{
   text-align: center;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.25rem;
   color: var(--square-border-color);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @keyframes fadeIn {
