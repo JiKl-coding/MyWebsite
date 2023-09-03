@@ -275,6 +275,10 @@ a{
   padding-bottom: 3rem;
 }
 
+.info a{
+  color: var(--changing-color2);
+}
+
 .work-examples-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -404,6 +408,64 @@ a{
 .example-square:hover .second-part > img{
   display:none;
   animation: displayOff 1s ease forwards;
+}
+
+.me{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 20rem;
+  margin-bottom: 8rem;
+}
+
+.me > h2{
+  font-family: var(--highlight-font);
+  font-size: 5rem;
+  font-weight: 400;
+  color:black;
+}
+
+.me > img {
+  width: 100%;
+  border-radius: 500%;
+}
+
+.my-project{
+  min-height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 10rem;
+}
+
+.project-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 20rem;
+}
+
+.project-box > img {
+  width: 100%;
+}
+
+.project-box > h2, .project-box > h2 > a{
+  font-family: var(--highlight-font);
+  color: black;
+  padding: 2rem 0;
+  flex: 1;
+  font-size: 2.5rem;
+}
+
+.project-box > p, .project-box > p > a{
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  flex: 3;
+  padding: 1.5rem 3rem;
+  color: black;
 }
 
 .footer{
@@ -656,6 +718,14 @@ a{
     margin-top: 0;
   }
   
+  .me > h2{
+    font-size: 4rem;
+  }
+  
+  .me > img {
+    width: 250px;
+  }
+  
 }
 
 @media (max-width: 750px){
@@ -688,6 +758,20 @@ a{
 
   #main-logo-image{
     width: 80px;
+  }
+
+  
+  .me{
+    flex-direction: column;
+  }
+  
+  .me > h2{
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+  
+  .me > img {
+    width: 250px;
   }
 
 }
@@ -752,5 +836,13 @@ a{
 @media (max-width: 260px){
   :root{
     font-size: 50%;
+  }
+
+  .me > h2{
+    font-size: 2.25rem;
+  }
+  
+  .me > img {
+    width: 150px;
   }
 }
