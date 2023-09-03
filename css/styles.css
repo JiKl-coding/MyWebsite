@@ -258,6 +258,7 @@ a{
   color: var(--main-blue-color);
   font-size: 5rem;
   animation: pulse 5s infinite alternate;
+  font-family: 'Overpass', sans-serif;
 }
 
 .info{
