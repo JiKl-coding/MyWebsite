@@ -258,7 +258,7 @@ a{
   color: var(--main-blue-color);
   font-size: 5rem;
   animation: pulse 5s infinite alternate;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Noto Sans Symbols 2', sans-serif;
 }
 
 .info{
