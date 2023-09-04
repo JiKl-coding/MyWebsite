@@ -33,7 +33,7 @@ a{
 .main-container{
   display: grid;
   grid-template-columns: 275px auto;
-  min-height: 100rvh;
+  min-height: 100dvh;
 }
 
 .navbar{
