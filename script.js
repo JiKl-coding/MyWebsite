@@ -42,6 +42,7 @@ if (currentPageName === "index%20eng" || currentPageName === "index") {
     "./assets/img/logos/react.png",
     "./assets/img/logos/angular.png",
     "./assets/img/logos/vba.png",
+    "./assets/img/logos/postgresql.png",
   ];
 }
 else {
@@ -53,6 +54,7 @@ else {
     "../../assets/img/logos/react.png",
     "../../assets/img/logos/angular.png",
     "../../assets/img/logos/vba.png",
+    "../../assets/img/logos/postgresql.png",
   ];
 }
 
