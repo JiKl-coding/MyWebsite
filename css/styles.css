@@ -33,7 +33,7 @@ a{
 .main-container{
   display: grid;
   grid-template-columns: 275px auto;
-  min-height: 100vh;
+  min-height: 100rvh;
 }
 
 .navbar{
@@ -677,6 +677,7 @@ a{
     align-items: start;
     background-color: var(--main-blue-color);
     border-top: var(--square-border-color) solid 2px;
+    z-index: 100;
   }
 
   #hamburger-menu.active{
