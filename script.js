@@ -6,6 +6,8 @@ toggleButton.addEventListener('click', (e) => {
   navbarLinks.classList.toggle('active');
 });
 
+
+
 function getCurrentPageName() {
   const url = window.location.href;
   
@@ -37,6 +39,9 @@ if (currentPageName === "index%20eng" || currentPageName === "index") {
     "./assets/img/logos/js.png",
     "./assets/img/logos/html5.png",
     "./assets/img/logos/css.png",
+    "./assets/img/logos/react.png",
+    "./assets/img/logos/angular.png",
+    "./assets/img/logos/vba.png",
   ];
 }
 else {
@@ -45,6 +50,9 @@ else {
     "../../assets/img/logos/js.png",
     "../../assets/img/logos/html5.png",
     "../../assets/img/logos/css.png",
+    "../../assets/img/logos/react.png",
+    "../../assets/img/logos/angular.png",
+    "../../assets/img/logos/vba.png",
   ];
 }
 
