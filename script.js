@@ -39,10 +39,12 @@ if (currentPageName === "index%20eng" || currentPageName === "index") {
     "./assets/img/logos/js.png",
     "./assets/img/logos/html5.png",
     "./assets/img/logos/css.png",
-    "./assets/img/logos/react.png",
-    "./assets/img/logos/angular.png",
+    /*"./assets/img/logos/react.png",*/
+    /*"./assets/img/logos/angular.png",*/
+    /*./assets/img/logos/vue.png",*/
     "./assets/img/logos/vba.png",
     "./assets/img/logos/postgresql.png",
+    "./assets/img/logos/progress.png",
   ];
 }
 else {
@@ -51,10 +53,12 @@ else {
     "../../assets/img/logos/js.png",
     "../../assets/img/logos/html5.png",
     "../../assets/img/logos/css.png",
-    "../../assets/img/logos/react.png",
-    "../../assets/img/logos/angular.png",
+    /*"../../assets/img/logos/react.png",*/
+    /*"../../assets/img/logos/angular.png",*/
+    /*"../../assets/img/logos/vue.png",*/
     "../../assets/img/logos/vba.png",
     "../../assets/img/logos/postgresql.png",
+    "../../assets/img/logos/progress.png",
   ];
 }
 
